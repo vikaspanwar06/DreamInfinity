@@ -1,0 +1,176 @@
+*{
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url('gallary1.jpg');
+    background-size: cover;
+    background-position: fixed;
+}
+.box{
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    background: #757575;
+    min-height: 200px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.box ul{
+    margin: 0;
+    padding: 16px 16px 0px 16px;
+    display: flex;
+    list-style: none;
+    background: #fff;
+}
+.box ul li{
+    margin: 0;
+    padding: 6px;
+    width: 20%;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    border-left: 3px solid #757575;
+}
+.box ul li.active{
+    color: #fff;
+    background: #757575;
+}
+.box ul button{
+    width: 140px;
+    height: 60px;
+    margin: 40px 50px;
+    padding: 4px 16px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background: #ffc601;
+    cursor: pointer;
+}
+.box ul button:hover{
+    background: #fff666;
+}
+.content{
+    padding: 10px;
+    color: #fff;
+}
+.hide{
+    display: none;
+}
+.active{
+    display: block;
+}
+
+#acdemics{
+    display: block;
+}
+#alignment{
+    width: 100%;
+    display: flex;
+}
+h2{
+    margin-left: 40px; 
+}
+span{
+    padding: 0px 6px;
+    cursor: pointer;
+}
+#alignment .part-one{
+    width: 33.3%;
+    text-align: justify;
+    padding: 0px 40px;
+    font-size: 14px;
+}
+#alignment .part-two{
+    width: 33.3%;
+    text-align: justify;
+    padding: 0px 40px;
+    font-size: 14px;
+}
+#alignment .part-two h3{
+    padding-bottom: 20px;
+}
+#alignment .part-three{
+    width: 32%;
+    text-align: justify;
+    padding: 0px 40px;
+    font-size: 14px;
+}
+#alignment .part-three h3{
+    padding-bottom: 12px;
+}
+
+#programme{
+    display: none;
+}
+#phd{
+    display: none;
+}
+#alignment .sub-one{
+    width: 50%;
+    text-align: justify;
+    padding: 0px 40px;
+    font-size: 14px;
+}
+#alignment .sub-two{
+    width: 50%;
+    text-align: justify;
+    padding: 0px 40px;
+    font-size: 14px;
+}
+
+
+@media(max-width: 900px){
+    .box{
+        width: 90%;
+    }
+    .box ul{
+        display: block;
+        padding: 4px 6px;
+    }
+    .box ul li{
+        width: 50%;
+        float: left;
+        border-left: none;
+    }
+    .box h2,h3,h4{
+        font-size: 14px;
+    }
+    #alignment{
+        width: 100%;
+        display: grid;
+    }
+    #alignment .part-one{
+        width: 100%;
+        font-size: 12px;
+        padding: 0px;
+        text-align: left;
+    }
+    #alignment .part-two{
+        width: 100%;
+        font-size: 12px;
+        padding: 0px;
+        text-align: left;
+    }
+    #alignment .part-three{
+        width: 100%;
+        font-size: 12px;
+        padding: 0px;
+        text-align: left;
+    }
+    #alignment .sub-one{
+        width: 100%;
+        font-size: 12px;
+        padding: 0px;
+        text-align: left;
+    }
+    #alignment .sub-two{
+        width: 100%;
+        font-size: 12px;
+        padding: 0px;
+        text-align: left;
+    }
+    
+}
